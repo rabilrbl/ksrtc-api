@@ -1,0 +1,14 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+micros:
+  - name: ksrtc-api
+    src: ./
+    engine: custom
+    primary: true
+    public: true
+    dev: go run .
+    commands:
+      - go build -o server -ldflags '-s -w' -trimpath .
+    include:
+      - server
+    run: ./server
