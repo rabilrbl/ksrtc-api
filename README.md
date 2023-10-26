@@ -50,7 +50,7 @@ The API should now be running locally on port 8080, or you can specify a differe
 The `ksrtc-api` provides the following endpoints:
 
 - `/` - Home endpoint to check if the API is up and running.
-- `/all` - Retrieve information about all bus routes.
+- `/all` - Retrieve information about all journey place data.
 - `/bus` - Retrieve information about specific bus routes.
 
 ### Examples
@@ -63,9 +63,9 @@ To check if the API is up and running, you can make a GET request to the home en
 GET http://localhost:8080/
 ```
 
-#### Retrieve All Bus Routes
+#### Retrieve All Place data
 
-To retrieve information about all bus routes, you can make a GET request to the `/all` endpoint:
+To retrieve information about all journey place data, you can make a GET request to the `/all` endpoint:
 
 ```http
 GET http://localhost:8080/all
