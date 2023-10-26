@@ -78,7 +78,7 @@ You can also filter the results by specifying the `from` and `to` query paramete
 To retrieve information about specific bus routes, you can make a GET request to the `/bus` endpoint and provide the necessary query parameters, including `fromPlaceName`, `startPlaceId`, `toPlaceName`, `endPlaceId`, and `journeyDate`.
 
 ```http
-GET http://localhost:8080/bus?fromPlaceName=Source&startPlaceId=123&toPlaceName=Destination&endPlaceId=456&journeyDate=26/10/2023
+GET http://localhost:8080/bus?fromPlaceName=BENGALURU&startPlaceId=1467467616730&toPlaceName=MANGALURU&endPlaceId=1467464668557&journeyDate=26/10/2023
 ```
 
 ## Caching
@@ -92,3 +92,5 @@ Contributions to the `ksrtc-api` project are welcome! If you find any issues or 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+You can access the publicly hosted API at https://apiksrtc.rabil.me/.
