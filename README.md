@@ -20,6 +20,17 @@
 
 ## Getting Started
 
+### Download the binary
+
+1. Download latest released binary from [releases](https://github.com/rabilrbl/ksrtc-api/releases/latest).
+2. On unix based systems, provide executable permissions.
+   ```bash
+   chmod +x ksrtc-api
+   ```
+3. Execute the binary and access the API at `http://localhost:8080/`.
+
+## Development
+
 ### Prerequisites
 
 Before you can run the `ksrtc-api` project, make sure you have the following installed on your system:
@@ -91,6 +102,6 @@ Contributions to the `ksrtc-api` project are welcome! If you find any issues or 
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache 2.0 License. See the [LICENSE](LICENSE) file for details.
 
 You can access the publicly hosted API at https://apiksrtc.rabil.me/.
