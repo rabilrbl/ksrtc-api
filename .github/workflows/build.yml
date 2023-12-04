@@ -87,12 +87,12 @@ jobs:
       - name: Build Executables 🗄️ 🔃
         run: |
           mkdir -p bin
-          # allowed_archs="amd64 arm arm64 386"
+          allowed_archs="amd64 arm arm64 386"
           for var in $(go tool dist list); do
-              # if [[ ! $allowed_archs =~ "$(cut -d '/' -f 2 <<< $var)" ]]; then
-              #     echo "Skipping: $var"
-              #     continue
-              # fi
+              if [[ ! $allowed_archs =~ "$(cut -d '/' -f 2 <<< $var)" ]]; then
+                  echo "Skipping: $var"
+                  continue
+              fi
               
               file_name="ksrtc-api-$(cut -d '/' -f 1 <<< $var)-$(cut -d '/' -f 2 <<< $var)"
               case "$(cut -d '/' -f 1 <<< $var)" in
